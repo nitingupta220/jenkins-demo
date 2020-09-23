@@ -10,7 +10,9 @@ pipeline{
             }
         }
         stage("Install the dependencies") {
-            sh "npm install"
+            steps {
+                sh "npm install"
+            }
         }
         stage("Building the app") {
             steps {
