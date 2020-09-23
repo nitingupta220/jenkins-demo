@@ -1,7 +1,6 @@
 pipeline{
-    agent{
-        label "node"
-    }
+    agent any
+    tools {nodejs "node"}
     stages{
         stage("Get code from Github"){
             steps{
