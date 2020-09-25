@@ -22,6 +22,12 @@ pipeline{
             steps {
                 sh "npm run deploy"
             }
+            post{
+                success{
+                    emailext body: 'Hello World', subject: 'Jenkins Build Status', to: 'nitin16@navgurukul.org'
+                }
+                
+            }
         }
     }
 }
