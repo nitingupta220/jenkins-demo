@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Deployed from Jenkins Aws EC2 and S3!!!
+          Email being sent.
         </a>
       </header>
     </div>
